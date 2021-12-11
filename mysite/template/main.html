@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Это Главная страница сайта</h1>
+    <p>
+        Welcome!
+    </p>
+    <p>
+        <a href="article/{{ch}}">Random article (id)</a>
+    </p>
+
+    <p>
+        <a href="article/{{ch}}/{{sl}}">Random article (id/slug)</a>
+    </p>
+
+{% endblock %}

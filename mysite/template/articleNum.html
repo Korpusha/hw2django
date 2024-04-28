@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Статьи</h1>
+
+<p>
+    {% if article_id|divisibleby:2 %}
+        Article #{{article_id}} is Even
+    {% else %}
+        Article #{{article_id}} is Odd
+    {% endif %}
+</p>
+
+{% include 'articleSlug.html' %}
+
+{% endblock %}
